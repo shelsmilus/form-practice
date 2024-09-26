@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+    <meta property="og:tittle" content="form Docs">
+    <meta property="og:type" content="Document">
+    <meta property="og:url" content="https://www.formdocs.com">
+    <meta property="og:description" content="form Document">
+    <meta property="og:image" content="image.png">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:site_name" content="formdocs">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="body">
+        <header class="header">
+            <h1 id="head"><strong>Real Osbibi</strong></h1>
+            <p><u><i><b>Home for charity, Urban Development and Youth investment platform!</b></i></u></p>
+        </header><br>
+
+        <main class="main">
+            <div class="sub-head">
+                <h2><u>Register Now!</u></h2>
+            </div>
+            <form action="/register" method="post">
+                <div>
+                    <label for="user_fullname">FullName:</label>
+                    <input type="text" id="user_fullname" name="user_fullname" placeholder="Fullname" ><br><br>
+                </div>
+                <div>
+                    <label for="user_name">Username:</label>
+                    <input type="text" id="user_name" name="user_name" placeholder="Username" required minlength="3"><br><br>
+                </div>
+                <div>
+                    <label for="user_email">Email:</label>
+                    <input type="email" id="user_email" name="user_email" placeholder="Email" required minlength="4"><br><br>
+                </div>
+                <div>
+                    <label for="user_password">Password:</label>
+                    <input type="password" id="user_password" name="user_password" placeholder="password" minlength="4" required><br><br>
+                </div>
+                <div>
+                    <label for="user-confirm_password">Confirm Password:</label>
+                    <input type="password" id="user-confirm_password" name="user-confirm_password" placeholder="confirm Password" minlength="4" required><br><br>
+                </div>
+                <div>
+                    <label for="User_age">Age:</label>
+                    <input type="range" id="User_age" name="User_age" min="12" value="12" required oninput="this.nextElementSibling.value = this.value">
+                    <output>12</output><br><br>
+                </div>
+                <fieldset id="gender">
+                    <label>
+                        <input type="radio" value="Male" name="gender">Male
+                    </label><br>
+                    <label>
+                        <input type="radio" value="Female" name="gender">Female
+                    </label><br>
+                </fieldset><br><br>
+                <input type="submit" value="Sign Up">
+            </form>
+
+        </main>
+        <style>
+            input [type=submit] {
+                border: 7px;
+                font-family: calibri;
+                font-size: 20px;
+                height: 10px;
+                width: 12px;
+            }
+        </style>
+
+        <footer class="footer">
+            <p>Copywrite disclaimer @osbibi</p>
+        </footer>
+
+    </div>
+</body>
+</html>
